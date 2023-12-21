@@ -1,0 +1,12 @@
+[gd_resource type="AnimationNodeStateMachine" load_steps=3 format=3 uid="uid://qddm48veu3kl"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_28e34"]
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_vuvjl"]
+states/StateMachine/node = SubResource("AnimationNodeStateMachine_28e34")
+states/StateMachine/position = Vector2(329, 100)
+
+[resource]
+states/Start/position = Vector2(230, 100)
+states/StateMachine/node = SubResource("AnimationNodeStateMachine_vuvjl")
+states/StateMachine/position = Vector2(387, 100)

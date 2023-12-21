@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsdrnuxhooxis"]
+
+[ext_resource type="Script" path="res://Scenes/mob/mob_brain.gd" id="1_gjw2r"]
+
+[node name="MobBrain" type="Node2D"]
+script = ExtResource("1_gjw2r")
+
+[node name="ActionTimer" type="Timer" parent="."]
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]

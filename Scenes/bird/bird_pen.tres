@@ -1,0 +1,8 @@
+[gd_resource type="NavigationPolygon" format=3 uid="uid://d1y5xr26wjdg4"]
+
+[resource]
+vertices = PackedVector2Array(2391, 276, -471, 276, -471, 9, 2391, 9)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-481, -1, 2401, -1, 2401, 286, -481, 286)])
+parsed_collision_mask = 4294967044
+source_geometry_group_name = &"navigation_polygon_source_group"

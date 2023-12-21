@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://dogadeita1cp5"]
+
+[ext_resource type="SpriteFrames" uid="uid://d1543c6ps2v2l" path="res://Scenes/mob/spriteframes/adventurer.tres" id="1_td1gu"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gai7o"]
+size = Vector2(22, 49)
+
+[node name="MobShape" type="Node2D"]
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_gai7o")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-32, -40)
+sprite_frames = ExtResource("1_td1gu")
+animation = &"run"
+centered = false

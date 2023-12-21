@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://djoi34x0atx0k"]
+
+[node name="Sun" type="DirectionalLight2D"]
+color = Color(1, 0.933, 0, 1)
+energy = 16.0

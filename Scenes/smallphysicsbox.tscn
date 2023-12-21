@@ -1,0 +1,28 @@
+[gd_scene load_steps=6 format=3 uid="uid://bd3l36rxjmssf"]
+
+[ext_resource type="Texture2D" uid="uid://dufri74l5n2xh" path="res://Assets/world/Tiles/Buildings.png" id="1_54mhm"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_m7siq"]
+friction = 0.5
+bounce = 0.5
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qtfd1"]
+atlas = ExtResource("1_54mhm")
+region = Rect2(208, 56, 16, 24)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_uoof5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cscjm"]
+size = Vector2(16, 24)
+
+[node name="Small Box" type="RigidBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_m7siq")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-8, -12)
+texture = SubResource("AtlasTexture_qtfd1")
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+material = SubResource("CanvasItemMaterial_uoof5")
+shape = SubResource("RectangleShape2D_cscjm")

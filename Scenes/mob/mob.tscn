@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://beharj6nsqitq"]
+
+[ext_resource type="Script" path="res://Scenes/mob/mob.gd" id="1_8pw3w"]
+[ext_resource type="SpriteFrames" uid="uid://d1543c6ps2v2l" path="res://Scenes/mob/spriteframes/adventurer.tres" id="2_8csh8"]
+[ext_resource type="Shape2D" uid="uid://bqa3nnamnnkv1" path="res://Scenes/mob/hitboxes/adventurer.tres" id="2_jotvs"]
+
+[node name="Mob" type="CharacterBody2D"]
+collision_layer = 2
+collision_mask = 2
+script = ExtResource("1_8pw3w")
+speed = 300.0
+jump_velocity = -400.0
+push_force = 80.0
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = ExtResource("2_jotvs")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+position = Vector2(-32, -40)
+sprite_frames = ExtResource("2_8csh8")
+animation = &"run"
+centered = false
+
+[node name="ActionTimer" type="Timer" parent="."]
+wait_time = 12.0
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+navigation_layers = 2
+
+[connection signal="timeout" from="ActionTimer" to="." method="_on_action_timer_timeout"]

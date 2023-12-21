@@ -1,0 +1,38 @@
+[gd_scene load_steps=4 format=3 uid="uid://df6tiosem1ju7"]
+
+[ext_resource type="Script" path="res://Scenes/bird/bird.gd" id="1_iqid2"]
+[ext_resource type="SpriteFrames" uid="uid://cho2qkfmqc8xa" path="res://Scenes/bird/spriteframes/waxwing.tres" id="2_mrp0c"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k2c8g"]
+size = Vector2(16, 16)
+
+[node name="Bird" type="Area2D" groups=["Birds"]]
+position = Vector2(229, 132)
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_iqid2")
+speed = {
+"fly": 300,
+"walk": 50
+}
+metadata/_edit_group_ = true
+
+[node name="Sprite" type="AnimatedSprite2D" parent="."]
+sprite_frames = ExtResource("2_mrp0c")
+animation = &"sit"
+frame = 3
+frame_progress = 1.0
+
+[node name="Hitbox" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_k2c8g")
+
+[node name="ActionTimer" type="Timer" parent="."]
+wait_time = 8.0
+autostart = true
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+navigation_layers = 4
+
+[connection signal="animation_changed" from="Sprite" to="." method="_on_sprite_animation_changed"]
+[connection signal="timeout" from="ActionTimer" to="." method="_on_action_timer_timeout"]
+[connection signal="target_reached" from="NavigationAgent2D" to="." method="_on_navigation_agent_2d_target_reached"]
