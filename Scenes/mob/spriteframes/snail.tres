@@ -1,109 +1,14 @@
-[gd_resource type="SpriteFrames" load_steps=21 format=3 uid="uid://csv83robokexf"]
+[gd_resource type="SpriteFrames" load_steps=3 format=3 uid="uid://csv83robokexf"]
 
-[ext_resource type="Texture2D" uid="uid://blp8hh5wm5o4i" path="res://Assets/NPCs/Snail/Hide-Sheet.png" id="1_qa68u"]
 [ext_resource type="Texture2D" uid="uid://djgptl480t82h" path="res://Assets/NPCs/Snail/all.png" id="2_nwtc8"]
-[ext_resource type="Texture2D" uid="uid://ta52nu5a8k60" path="res://Assets/NPCs/Snail/walk-Sheet.png" id="3_i7hfb"]
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_lcglc"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(0, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_2i3ho"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(48, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_pg5ha"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(96, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_86vm0"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(144, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_76ttc"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(192, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_aaclc"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(240, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_mk4hq"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(288, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_hsnw4"]
-atlas = ExtResource("1_qa68u")
-region = Rect2(336, 0, 48, 32)
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_xye4h"]
 atlas = ExtResource("2_nwtc8")
 region = Rect2(0, 128, 48, 32)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_7d74i"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(0, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_p7dsr"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(48, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_gjogi"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(96, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_6cps2"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(144, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_fwxiu"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(192, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_bxop1"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(240, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_es2q1"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(288, 0, 48, 32)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_ifd28"]
-atlas = ExtResource("3_i7hfb")
-region = Rect2(336, 0, 48, 32)
-
 [resource]
 resource_name = "Snail"
 animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_lcglc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_2i3ho")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_pg5ha")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_86vm0")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_76ttc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_aaclc")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_mk4hq")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_hsnw4")
-}],
-"loop": false,
-"name": &"hide",
-"speed": 10.0
-}, {
 "frames": [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_xye4h")
@@ -111,33 +16,4 @@ animations = [{
 "loop": true,
 "name": &"idle",
 "speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_7d74i")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_p7dsr")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_gjogi")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_6cps2")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_fwxiu")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_bxop1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_es2q1")
-}, {
-"duration": 1.0,
-"texture": SubResource("AtlasTexture_ifd28")
-}],
-"loop": true,
-"name": &"walk",
-"speed": 10.0
 }]

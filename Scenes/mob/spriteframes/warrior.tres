@@ -1,4 +1,4 @@
-[gd_resource type="SpriteFrames" load_steps=18 format=3 uid="uid://df708tofvv6yx"]
+[gd_resource type="SpriteFrames" load_steps=7 format=3 uid="uid://df708tofvv6yx"]
 
 [ext_resource type="Texture2D" uid="uid://c0x7oyqs7t2ro" path="res://Assets/NPCs/Warrior/Individual Sprite/idle/Warrior_Idle_1.png" id="1_exans"]
 [ext_resource type="Texture2D" uid="uid://diuouwwnobmk8" path="res://Assets/NPCs/Warrior/Individual Sprite/idle/Warrior_Idle_2.png" id="2_wkg6l"]
@@ -6,17 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://ce1nrw4pcb4nh" path="res://Assets/NPCs/Warrior/Individual Sprite/idle/Warrior_Idle_4.png" id="4_tvh3x"]
 [ext_resource type="Texture2D" uid="uid://dyxlcn2bu0j2i" path="res://Assets/NPCs/Warrior/Individual Sprite/idle/Warrior_Idle_5.png" id="5_4gj3y"]
 [ext_resource type="Texture2D" uid="uid://s1vrxf0o11j6" path="res://Assets/NPCs/Warrior/Individual Sprite/idle/Warrior_Idle_6.png" id="6_yo5n8"]
-[ext_resource type="Texture2D" uid="uid://cogvs5fcdmvk7" path="res://Assets/NPCs/Warrior/Individual Sprite/Jump/Warrior_Jump_1.png" id="7_12h88"]
-[ext_resource type="Texture2D" uid="uid://bbyi34nk3m6h7" path="res://Assets/NPCs/Warrior/Individual Sprite/Jump/Warrior_Jump_2.png" id="8_gma5h"]
-[ext_resource type="Texture2D" uid="uid://dyimasisrg2sg" path="res://Assets/NPCs/Warrior/Individual Sprite/Jump/Warrior_Jump_3.png" id="9_fl6ym"]
-[ext_resource type="Texture2D" uid="uid://c0cpviem7b0ue" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_1.png" id="10_jhwhj"]
-[ext_resource type="Texture2D" uid="uid://c8eyrloyumj70" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_2.png" id="11_3pd3l"]
-[ext_resource type="Texture2D" uid="uid://n68gxbq6ymw6" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_3.png" id="12_ywi1p"]
-[ext_resource type="Texture2D" uid="uid://bbrdcv8w5h18y" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_4.png" id="13_3xpyg"]
-[ext_resource type="Texture2D" uid="uid://dls47d5jfaxdx" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_5.png" id="14_3j5vj"]
-[ext_resource type="Texture2D" uid="uid://c34hlobm687r6" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_6.png" id="15_1hxra"]
-[ext_resource type="Texture2D" uid="uid://br3sak464xacd" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_7.png" id="16_vtelb"]
-[ext_resource type="Texture2D" uid="uid://xemswf0x7n2t" path="res://Assets/NPCs/Warrior/Individual Sprite/Run/Warrior_Run_8.png" id="17_wf3a8"]
 
 [resource]
 animations = [{
@@ -41,48 +30,5 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("7_12h88")
-}, {
-"duration": 1.0,
-"texture": ExtResource("8_gma5h")
-}, {
-"duration": 1.0,
-"texture": ExtResource("9_fl6ym")
-}],
-"loop": true,
-"name": &"jump",
-"speed": 5.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("10_jhwhj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("11_3pd3l")
-}, {
-"duration": 1.0,
-"texture": ExtResource("12_ywi1p")
-}, {
-"duration": 1.0,
-"texture": ExtResource("13_3xpyg")
-}, {
-"duration": 1.0,
-"texture": ExtResource("14_3j5vj")
-}, {
-"duration": 1.0,
-"texture": ExtResource("15_1hxra")
-}, {
-"duration": 1.0,
-"texture": ExtResource("16_vtelb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("17_wf3a8")
-}],
-"loop": true,
-"name": &"run",
 "speed": 10.0
 }]

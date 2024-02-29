@@ -31,13 +31,6 @@ func walk():
 func idle():
 	velocity.x = move_toward(velocity.x, 0, speed)
 
-func teleport(portal_id: int):
-	for portal in get_tree().get_nodes_in_group("Portals"):
-			if portal.source_id == portal_id:
-				if !portal.locked:
-					portal.lockPortal()
-					global_position = portal.global_position
-
 func physics_push():
 	for i in range(get_slide_collision_count()):
 		var c = get_slide_collision(i)
@@ -58,11 +51,6 @@ func update_animation():
 
 func _on_sprite_animation_changed():
 	animated_sprite.play(animated_sprite.animation)
-
-func _on_area_2d_area_entered(portal: Area2D):
-	if portal.is_in_group("Portals"):
-		portal.lockPortal()
-		teleport(portal.destin_id)
 
 func _ready():
 	in_air = false
